@@ -45,6 +45,7 @@ pub fn write_allowance(
             expiration_ledger
                 .checked_sub(e.ledger().sequence())
                 .unwrap(),
+            expiration_ledger
         )
     }
 }
